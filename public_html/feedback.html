@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>feedback</title>
+<meta charset="UTF-8">
+<style>
+html,body{margin:0;}
+body       {background-image:url("fbgg.jpg");
+            background-size:cover;
+			right:0;
+            font-size:150%;				
+	       }
+#logo { height:50px; width:50px; vertical-align:middle;}
+nav { background-color:#C0D3F8;
+      position:fixed;
+      width:100%;
+      height:7%;
+	  padding-bottom:10px;
+      	  
+	}
+nav a{ color:#10428D; 
+	   text-decoration:none;
+     }
+nav a:hover{ color:#108D8A;}
+#fbox
+        {
+		 width:50%;
+		 text-align:center;
+		 left:0;
+        }		 
+.str,#str { border-radius:50%;
+       background-color:black;
+	   height:25px;
+	   width:25px;
+	   }
+.str:hover{ background-color:yellow;}
+#in        { font-size:1em;
+            border-radius:8px;
+            width:45%; height:50px;
+            transition: width 0.3s ease-in-out;
+			margin:10px;
+			box-shadow:0 5px 5px 0 black;
+		   }
+#in:focus {width:70%}
+.rating { font-size:1em;
+          margin:10px;
+		}
+#com    {
+          font-size:1em;
+            border-radius:8px;
+            width:50%; height:20%;
+			margin:20px;
+			transition: width 0.4s ease-in-out;
+			box-shadow:0 5px 5px 0 black;
+		}
+.d{ color:#8D0006; font-family:Luminari, fantasy;}
+.s{color:#82D58F; font-family:Luminari, fantasy;}
+button { font-size:1em;
+         border-radius:5px;
+         box-shadow:0 5px 5px 0 black;
+		 width:150px; 
+       }
+h2 {color:#8A4A9D; font-family:Luminari, fantasy;}	  
+#bi {position:absolute;
+     width:50%;
+     float:right;
+	 right:0;
+	 margin-top:50px;
+    }	 
+</style>
+</head>
+<body>
+<nav>
+<img id="logo" src="images/logs.png" alt="logo"/>
+&emsp;<a href="homepage.html">Homepage</a>
+&emsp;<a href="customer.html" target="_blank">Customer</a>
+&emsp;<a href="Services.html" target="_blank">Services</a>
+&emsp;<a href="prebook.html" target="_blank">Pre-book</a>
+&emsp;<a href="availability.html" target="_blank">Availability</a>
+&emsp;<a href="about.html" target="_blank">About Us</a>
+&emsp;<a href="feedback.html" target="_blank">Feedback</a>
+</nav>
+<br><br>
+<div id="bi"><img src="images/fbg.png" alt="feedback" height="500px" width="700px" /></div>
+<div id="fbox">
+<h2>Your Feedback Is Valuable to Us!</h2>
+<form method="post" action="fserver.php" >
+<input name="name" type="text" id="in" placeholder="&emsp;Name" required />
+<br>
+<input name="pno" type="text" id="in" placeholder="&emsp;Phone Number(optional)"/>
+<br>
+<div class="rating">
+<span class="d" >Dissatisfied</span>
+
+<span class="str"><input type="radio" name="rating" id="str" value="1"/><label for="str1"></label></span>
+<span class="str"><input type="radio" name="rating" id="str" value="2"/><label for="str2"></label></span>
+<span class="str"><input type="radio" name="rating" id="str" value="3"/><label for="str3"></label></span>
+<span class="str"><input type="radio" name="rating" id="str" value="4"/><label for="str4"></label></span>
+<span class="str"><input type="radio" name="rating" id="str" value="5"/><label for="str5"></label></span>
+
+<span class="s">Extremely Satisfied</span>
+</div>
+<textarea name="comment" id="com" rows="10" cols="50" placeholder="Comments" ></textarea>
+ <br>
+<button id="sub" type="submit" name="submit" >Submit</button> 
+</form>
+</div>
+</body>
+</html>

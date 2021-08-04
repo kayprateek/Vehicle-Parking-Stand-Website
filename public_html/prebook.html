@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>feedback</title>
+<meta charset="UTF-8">
+<style>
+html,body{margin:0;}
+body       {
+            font-size:150%;	font-family:courier;		
+	       }
+#logo { height:50px; width:50px; vertical-align:middle;}
+nav { background-color:#C0D3F8;
+      position:fixed;
+      width:100%;
+      height:7%;
+	  padding-bottom:10px;
+	  font-family:arial;
+      	  
+	}
+nav a{ color:#10428D; 
+	   text-decoration:none;
+     }
+nav a:hover{ color:#108D8A;}
+
+h1 {color:#52BE80;}	
+p {margin:auto; font-size:1em; font-family:courier;}
+input { font-size:1em; widhth:200px; height:40px;margin:10px;border-radius:5px;}
+
+button       { height:50px; width:100px;
+               color:white; background-color:#5E0C0C;
+			   margin:20px;
+			 }	
+h4{ margin:20px; color:red;}
+</style>
+</head>
+<body>
+<nav>
+<img id="logo" src="images/logs.png" alt="logo"/>
+&emsp;<a href="homepage.html">Homepage</a>
+&emsp;<a href="customer.html" target="_blank">Customer</a>
+&emsp;<a href="Services.html" target="_blank">Services</a>
+&emsp;<a href="prebook.html" target="_blank">Pre-book</a>
+&emsp;<a href="availability.html" target="_blank">Availability</a>
+&emsp;<a href="about.html" target="_blank">About Us</a>
+&emsp;<a href="feedback.html" target="_blank">Feedback</a>
+</nav>
+<br><br>
+<p>
+<h1>Pre Booking Form</h1>
+
+<form method="post" action="pserver.php" >
+<input name="name" type="text" id="in" placeholder="&emsp;Name" required />
+<br>
+<input name="pno" type="text" id="in" placeholder="&emsp;Phone Number" required />
+<br>
+<input name="date" type="date" id="in" placeholder="&emsp;Date of Reservation "required />
+<br>
+<input name="vtype" type="text" id="in" placeholder="&emsp;Vehicle Number" required />
+<br>
+<input name="vno" type="text" id="in" placeholder="&emsp;Vehicle Type" required />
+<br>
+<button id="sub" type="submit" name="submit" >Confirm</button> 
+</p>
+<h4>Note : Payment will be accepted at the desk .</h4>
+<h4>For any query call us on 9487667667 .</h4>
+</form>
+</body>
+</html>

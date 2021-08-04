@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>customer</title>
+<meta charset="UTF-8">
+<style>
+html,body{margin:0;}
+body       {
+            background-image:url("cbg.jpg");
+			background-repeat:no-repeat;
+			background-size:cover;
+            font-size:150%;	
+            color:white;	
+			
+	       }
+#logo { height:50px; width:50px; vertical-align:middle;}
+nav { background-color:#C0D3F8;
+      position:fixed;
+      width:100%;
+      height:7%;
+	  padding-bottom:10px;
+      	  
+	}
+nav a{ color:#10428D; 
+	   text-decoration:none;
+     }
+nav a:hover{ color:#108D8A;}
+#lbox
+        {
+		 float:left;
+		 padding-top:70px;
+		 text-align:center;
+		 width:50%;
+		 background-color:hsla(179, 89%, 31%,0.3);
+		 padding-bottom:430px;
+		}
+#rbox
+        {
+		 padding-bottom:50px;
+		 float:right;
+		 padding-top:70px;
+		 top:7%;
+		 text-align:center;
+		 width:50%;
+		 background-color:hsla(11, 80%, 60%,0.3);
+		}
+		
+#lbox p {text-align:center; }
+#lbox input,#rbox input{
+            margin:10px;
+            font-size:1em;
+            border-radius:8px;
+            width:40%; height:50px;
+            transition: width 0.4s ease-in-out;
+		   }
+#lbox input:focus,#rbox input:focus {
+                    width: 60%;
+                   }
+#lbox button,#rbox button{ height:50px; width:100px;
+               color:white; background-color:#5E0C0C;
+			 }	
+#lbox button{ background-color:#52BE80; color:black;}			 
+</style>
+
+</head>
+<body>
+<nav>
+<img id="logo" src="images/logs.png" alt="logo"/>
+&emsp;<a href="homepage.html">Homepage</a>
+&emsp;<a href="customer.html" target="_blank">Customer</a>
+&emsp;<a href="Services.html" target="_blank">Services</a>
+&emsp;<a href="prebook.html" target="_blank">Pre-book</a>
+&emsp;<a href="availability.html" target="_blank">Availability</a>
+&emsp;<a href="about.html" target="_blank">About Us</a>
+&emsp;<a href="feedback.html" target="_blank">Feedback</a>
+</nav>
+
+<div id="rbox">
+<form action="server.php" method="post">
+<h2>New user? Sign up now.</h2>
+<br>
+<p><img src="images/char.jpg" alt="avatar" height="150" width="150"/></p>
+<br><br>
+<br><input type="text" name="name" placeholder="&emsp;Name" required />
+<br><input type="tel" name="pno" placeholder="&emsp;Phone Number" required />
+<br><input type="text" name="vtype" placeholder="&emsp;Vehicle Type" required />
+<br><input type="text" name="vno" required placeholder="&emsp;Vehicle Number" />
+<br><input type="text" name="username" required placeholder="&emsp;Username" />
+<br><input type="password" name="password1" placeholder="&emsp;Password" required />
+<br><input type="password" name="password2" required placeholder="&emsp;Confirm Password" />
+<br><br>
+<button type="submit" name="rbutton">Register</button>
+</form>
+</div>
+
+
+<div id="lbox">
+<form action="server.php " method="post" >
+<h2>Welcome! Login to Continue.</h2>
+<br>
+<p><img src="images/lchar.png" alt="avatar" height="150" width="150"/></p>
+<br><br>
+<br><input type="text" name="uname" placeholder="&emsp;Username" required />
+<br><input type="password" name="pass" required placeholder="&emsp;Password" />
+<br><br>
+<button type="submit" name="lbutton" >Login</button>
+</form>
+</div>
+</body>
+</html>
