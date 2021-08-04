@@ -43,7 +43,8 @@ Background information about the owners and the parking stand with images.
 A form for accepting feedback from the customer.
 
 # PHP Pages
-Xampp was used to create a local server and test the PHP scripts.
+Xampp was used to create a local server and test the PHP scripts
+
 •	Server
 •	Feedback Server
 •	Pre-book Server
